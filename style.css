@@ -135,6 +135,14 @@ input[type=checkbox]:checked ~ #menu{
 
 /*Responsive Styles*/
 @media screen and (max-width : 1120px){
+    #main {
+        width:100%;
+        background-size: cover;
+        background-image: url("pics/mainmobile.jpeg");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
     #logo {
         width: 40%;
         height:auto;
