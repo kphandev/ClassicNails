@@ -1,76 +1,372 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Classic N&S Canal Winchester</title>
+    <title>🛀 Classic Nails and Spa</title>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="style.css" />
+    <!-- <meta property='og:title' content='Kevin Phan Portfolio'/>
+    <meta property='og:image' content="https://images.unsplash.com/photo-1558174685-430919a96c8d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80"/> -->
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> 
+    <script
+      src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="dos.css" />
   </head>
-  <body>
-    <div class="navbar">
-      <img id = "logo" src = pics/LogoBlack.png>
-      <label for="show-menu" class="show-menu"> &#9776 </label>
-      <input type="checkbox" id="show-menu" role="button" />
-      <ul id="menu">
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">PHOTOS</a></li>
-        <li>
-          <a href="#">￬ SERVICES ￬</a>
-          <ul class="hidden">
-            <li><a href="#">Manicures</a></li>
-            <li><a href="#">Pedicures</a></li>
-            <li><a href="#">Waxing</a></li>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar navbar-expand-lg fixed-top navT" id="mainNav">
+        <a class="navbar-brand js-scroll-trigger" id = "logobox" href="#section1"
+          ><img id = "logo" src="pics/Logoblack.png"></a
+        >
+        <button
+          class="navbar-toggler navbar-toggler-right"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          id = "hamburger"
+        >
+          MENU
+          <i class="fas fa-bars ml-1"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger menu-op" href="#section1">Home</a> 
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger menu-op" href="#section2">Services</a> 
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger menu-op" href="#section3">About</a>
+            </li>
           </ul>
-        </li>
-      </ul>
+        </div>
+
+    </nav>
+    <div id="section1">
+      <header class="masthead">
+        <div class="container">
+          <div class="masthead-heading text-uppercase"><img style = "max-width: 100%; height: auto;"src = "pics/Logoblack.png"></div>
+          <div class="masthead-subheading" style = "color: black;" id = "canalWin">-Canal Winchester-</div>
+        </div>
+      </header>
+    </div>
+    <!-- SKILLS -->
+    <!-- <div
+      id="section2"
+      class="container-fluid"
+      style="padding-top: 70px; padding-bottom: 70px"
+    >
+    <div class="row sectionBanner">
+      <div class="col-md-12 d-flex justify-content-center"><h2>SKILLS</h2></div>
     </div>
 
-    <div class="flex" id="main">
-      <div class="col-lg-12" id="logoMain">
-        <img src="pics/LogoBlack.png" />
+      <div class = "container">
+      <div class="row text-center">
+      <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fas fa-circle fa-stack-2x text-warning"></i>
+              <i class="fas fa-flask fa-stack-1x fa-inverse"></i>
+            </span>
+            <h2 class="my-3">RESEARCHER</h2>
+            <p class="text-muted">
+              Years of experience in the research field have honed my investigative, diagnostic, and problem-solving skills which have carried over to my software development career.
+            </p>
+            <p>
+              "Research is creating new knowledge"
+              <br> -Neil Armstrong-
+            </p>
+          </div>
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fas fa-circle fa-stack-2x text-danger"></i>
+              <i class="fas fa-laptop-code fa-stack-1x fa-inverse"></i>
+            </span>
+            <h2 class="my-3">FULL STACK DEVELOPER</h2>
+
+            <p class="text-muted">
+              In a field that is always updating, my motivation and excitement fuel my growth and learning. From front-end to back-end, my skills are expanding at an exponential rate with each new project and framework. 
+            </p>            
+            <p>
+              "Make it work, make it right, make it fast"<br>-Kent Beck-
+            </p>
+          </div>
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fas fa-circle fa-stack-2x text-warning"></i>
+              <i class="fas fa-users fa-stack-1x fa-inverse"></i>
+            </span>
+            <h2 class="my-3">TEAM PLAYER</h2>
+            <p class="text-muted">
+              Working in a lab, hospital, and volunteer environment has taught me how to adapt to any team, capitalize its strengths, and to fill in its weaknesses. 
+            </p>            
+            <p>
+            <p>
+              "None of us is as smart as all of us"<br>-Ken Blanchard-
+            </p>
+          </div>
       </div>
-      <div class="row no-gutters">
-        <div class="col-lg-4" id="logoMain">
-          1. MANICURES <img class="thumbnail" src="pics/gel.jpg" />
+    </div>
+    </div>
+    -->
+    <div
+      id="section2"
+      class="container-fluid"
+      style="padding-top: 70px; padding-bottom: 70px"
+    > 
+      <!-- 1 -->
+      <div class="row">
+        <div class="col-md-12 d-flex justify-content-center "><h2>SERVICES</h2></div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 d-flex justify-content-center">Click each image to learn more</div>
+      </div>
+      <div class="row">
+
+        <div class="col-md-4 d-flex">
+          <div class="container port-box d-flex row align-items-end justify-content-center">
+            <div class = "link">
+            <img
+              class = "img-fluid"
+              style="width: 100%"
+              data-toggle="modal"
+              data-target="#myModal1"
+              src="pics/gel.jpg"
+            />
+            </div>
+            <div class = "caption text-center">
+              <h2>MANICURES</h2>
+              <p>- Gel - Artificial -</p>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="myModal1" role="dialog">
+              <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                      &times;
+                    </button>
+                    <h3 class="modal-title">MANICURES</h3>
+                  </div>
+                  <div class="modal-body">
+                    <div class = "container d-flex justify-content-center">
+                      <img style = "width: 300px; height: auto;"
+                      src = "pics/divider2.png">
+                    </div>
+                    <div class = "container d-flex justify-content-center">
+                      <h2>Specials</h2>
+                        <ul>
+                          <li><b>Classic</b> -- Shape nails, buffer, massage, and polish</li>
+                          <li><b>Signature</b> -- Lavendar scrub, blue mask exfoliation, and moisturizing treatment</li>
+                          <li><b>Milk & Honey</b> -- Honey sugar scrub and milky butter cream moisturizing treatment</li>
+                          <li><b><i class="fas fa-star"></i>Gel</i></b> -- Most Popular! Manicure with gel polish that lasts up to 2-3 weeks!</li>
+                        </ul>
+                    </div>
+                    <div class = "container d-flex justify-content-center">
+                      <img style = "width: 300px; height: auto; transform: scaleX(-1) scaleY(-1);"
+                      src = "pics/divider2.png">
+                    </div>
+                    <div class = "container d-flex justify-content-center">
+                      <h2>Artificial</h2>
+                        <ul>
+                          <li><b>We provide many shapes, including Coffin!</b></li>
+                          <li>Acrylic Full Set</li>
+                          <li>Acrylic Balance</li>
+                          <li>Acrylic Overlay</li>
+                          <li>White French Tip Full Set</li>
+                          <li>Pink & White Full Set</li>
+                          <li>Pink & White Balance</li>
+                          <li>---------------------</li>
+                          <li>Pollish Change</li>
+                          <li>Nail Repair</li>
+                          <li>Polish Removal and Manicure</li>
+                        </ul>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-default"
+                      data-dismiss="modal"
+                    >
+                      BACK
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-lg-4" id="logoMain">
-          2. PEDICURES <img class="thumbnail" src="pics/pedicure.jpg" />
+
+        <!-- 2 -->
+
+        <div class="col-md-4 d-flex">
+          <div class="container port-box d-flex row align-items-end justify-content-center">
+            <div class = "link">
+            <img
+              class = "img-fluid"
+              style="width: 100%"
+              data-toggle="modal"
+              data-target="#myModal2"
+              src="pics/pedicure.jpg"
+            />
+            </div>
+            <div class = "caption text-center">
+              <h2>PEDICURES</h2>
+              <p>- Signature -</p>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="myModal2" role="dialog">
+              <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                      &times;
+                    </button>
+                    <h2 class="modal-title">PEDICURES</h2>
+                  </div>
+                  <div class="modal-body">
+                    <div class = "container d-flex justify-content-center">
+                      <img style = "width: 300px; height: auto;"
+                      src = "pics/divider3.png">
+                    </div>
+                    <div class = "container d-flex justify-content-center">
+                      <h2>Specials</h2>
+                        <ul>
+                          <li><b>Classic</b> -- Shape nails, buffer, callus removal, massage, and polish</li>
+                          <li><b>Signature</b> -- Exfoliating sea salt scrub, soothing peppermint, and rejuvenating hot towel wrap</li>
+                          <li><b>French or Color Tip</b> -- Classic pedicure with a white or color tip polish</li>
+                          <li><b><i class="fas fa-star"></i>Milk & Honey</i></b> -- Pedicure with exfoliating honey sugar scrub, butter cream moisturizer, and knee-high hot towel wrap</li>
+                        </ul>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-default"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-lg-4" id="logoMain">
-          3. WAXING <img class="thumbnail" src="pics/wax.jpg" />
+
+        <!-- 3 -->
+
+        <div class="col-md-4 d-flex">
+          <div class="container port-box d-flex row align-items-end justify-content-center">
+            <div class = "link">
+            <img
+              class = "img-fluid"
+              style="width: 100%"
+              data-toggle="modal"
+              data-target="#myModal3"
+              src="pics/wax.jpg"
+            />
+            </div>
+            <div class = "caption text-center">
+              <h2>WAXING</h2>
+              <p>- Facial Waxing -</p>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal3" role="dialog">
+              <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                      &times;
+                    </button>
+                    <h4 class="modal-title">WAXING</h4>
+                  </div>
+                  <div class="modal-body">
+                    <div class = "container d-flex justify-content-center">
+                      <img style = "width: 300px; height: auto;"
+                      src = "pics/divider.jpg">
+                    </div>
+                    <div class = "container d-flex justify-content-center">
+                      <h2>Waxing</h2>
+                        <ul>
+                          <li><b>Full Face</b></li>
+                          <li><b>Upper Lip</b></li>
+                          <li><b>Chin</b></li>
+                          <li><b>Eyebrow</b></li>
+                          <li><b>Sideburns</b></li>
+                        </ul>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-default"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 -->
+
+        <!-- 5 -->
+
+        <!-- 6 -->
+      </div>
+
+      <!-- Next row--follow pattern every 6-->
+</div>
+    <!-- CONTACT ME -->
+    <div
+      id="section3"
+      class="container-fluid"
+    >
+      <div class="container thanks">
+        <div class="row">
+          <div class="col-md-12 d-flex justify-content-center "><h2>CONTACT ME</h2></div>
+        </div>
+        <div class="row ">
+          <div class="col-md-12 d-flex justify-content-center">Thank you for visiting!</div>
+        </div>
+        <div class="d-flex row justify-content-center">
+
+        </div>
+        <br>
+        <div class="d-flex row justify-content-center">&#128231 thekphantastic@gmail.com</div>
+        <div class="d-flex row justify-content-center">&#9742 (614)-330-7079</div>
+        <div> 
+        <div class="d-flex row justify-content-center"><span><a href = "https://www.linkedin.com/in/kev-phan/"><i class="fab fa-linkedin" style="width: 60px; height: auto;"></i></a></span>
+          <span><a href = "https://github.com/kphanplan"><i class="fab fa-github" style="width: 60px; height: auto;"></i></a></span></div>
         </div>
       </div>
     </div>
-
-    <div class="navbar">
-
-      <div class="col-md-4" id="footer">
-        <h6><b>ADDRESS</b><br> 6450 Winchester Blvd<br />
-          Canal Winchester, OH 43110<br/>(614)-834-5537</h6>
-   
-      </div>
-      <div class="col-md-4" id="footer">
-
-        <h6>        
-          <b>PANDEMIC HOURS</b><br>
-          Monday - Friday: 10AM–6PM<br />
-          Saturday: 10AM–5PM<br />
-          Sunday: Closed</h6>
-      </div>
-      <div class="col-md-4" id="footer">
-        <h6>        
-          <b>NORMAL HOURS</b><br>
-          Monday - Friday: 10AM–7PM<br />
-          Saturday: 10AM–6PM<br />
-          Sunday: Closed</h6>
-      </div>
-    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="script.js"></script>
   </body>
 </html>
