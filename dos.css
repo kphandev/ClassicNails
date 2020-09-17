@@ -1,5 +1,7 @@
 body {
   position: relative;
+  font-family: 'Montserrat', sans-serif;
+
 }
 
 header.masthead {
@@ -76,6 +78,7 @@ header.masthead .masthead-heading {
 }
 
 .navT {
+  border-bottom: 2px white solid;
   background-color: tan;
   color: white;
 }
@@ -94,7 +97,7 @@ header.masthead .masthead-heading {
 }
 
 #section3 {
-  background: tan;
+  background: papayawhip;
   font-family: "Montserrat", sans-serif;
 }
 #section4{
@@ -165,8 +168,17 @@ img {
   background-color: lavenderblush;
 }
 
+.service-title{
+  font-family: 'Rubik', sans-serif;
+}
+
 .service-small{
   display:none;
+}
+
+#demo {
+  width: 100%; 
+  padding: 0 20%;
 }
 
 @media (max-width: 1200px) {
@@ -209,5 +221,9 @@ img {
   }
   .service-small {
     display: block;
+  }
+  #demo {
+    width: 100%; 
+    padding: 0 5%;
   }
 }
