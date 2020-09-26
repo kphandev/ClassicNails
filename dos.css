@@ -160,6 +160,11 @@ img {
   color: rosybrown;
 }
 
+.main-icon:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
 .modal-header {
   background-color: tan;
 }
